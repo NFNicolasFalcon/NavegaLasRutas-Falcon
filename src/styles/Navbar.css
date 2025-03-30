@@ -1,0 +1,19 @@
+.navContainer{
+    background-color:#010120;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:aliceblue;
+  }
+  .aContainer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 1.3rem;
+    
+  }
+  .logo{
+    width: 10rem;
+  }
