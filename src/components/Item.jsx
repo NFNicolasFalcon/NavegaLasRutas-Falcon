@@ -13,7 +13,7 @@ const Item = ({producto}) => {
         <Card.Text>
           ${producto.price},00
         </Card.Text>
-        <a className='btn btn-primary' href='./Item.jsx${producto.id}'>Ver mas</a>
+        <Link className='btn btn-primary' to={`/item/${producto.id}`}>Ver más</Link>
         <>
        
         </>

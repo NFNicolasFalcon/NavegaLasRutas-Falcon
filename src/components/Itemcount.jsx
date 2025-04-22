@@ -1,18 +1,24 @@
 import { useState } from "react"
 
-const Itemcount = () => {
-const [count,setCount] = useState(1) 
+const Itemcount = ({stock, onAdd}) => {
+    const [count, setCount]=useState(1)
+       
+   const add = () => {
+       if(count < stock){
+           setCount( count + 1 )
+       }
+   }
 
-const add = () =>{  
-        setCount (count + 1)   
-}
-
-const substract=() =>{
+   const substract = () => {
+    if(count > 0){
         setCount(count - 1)
+    }
 }
-const comprar = () => {
-    onAdd(count)
-}
+//const comprar = () => {
+//    onAdd(count)
+//}
+
+
 
 return (
   <div>

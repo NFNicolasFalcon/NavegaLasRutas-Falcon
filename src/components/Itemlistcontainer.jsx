@@ -1,6 +1,6 @@
 import {getProducts} from '../mock/Asyncservice'
 import { useEffect, useState } from "react"
-import ItemList from "./ItemList"
+import ItemList from "./itemList"
 import { useParams } from 'react-router-dom'
 const Itemlistcontainer = ({greeting}) => {
   const [data, setData]= useState([])
@@ -14,7 +14,7 @@ const Itemlistcontainer = ({greeting}) => {
       getProducts()
       .then((res)=>{
         if(categoryId){
-          //filtro
+          
           setData(res.filter((prod)=> prod.category === categoryId ))
         }else{
           setData(res)

@@ -12,7 +12,7 @@ const Navbars = () => {
           <img src="./logo.png" alt="" />
           </NavLink> 
           <div className='a-container'>
-                <NavLink to='/category/nuevos'>Nuevos</NavLink>
+                <NavLink to='/category/Nuevos'>Nuevos</NavLink>
                 <NavLink to='/category/ofertas'>Ofertas</NavLink>
                 <NavLink to='/category/mas vendidos'>Más vendidos</NavLink>
             </div>
