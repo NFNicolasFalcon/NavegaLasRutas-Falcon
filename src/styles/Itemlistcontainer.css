@@ -1,6 +1,11 @@
 .section{
     display: flex;
+    display: block;
     justify-content: center;
+    align-items: center;
     background-color: rgb(176, 165, 165);
     
+}
+h1{
+    text-align: center;
 }
