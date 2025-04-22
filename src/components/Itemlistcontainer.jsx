@@ -1,8 +1,8 @@
 import {getProducts} from '../mock/Asyncservice'
 import { useEffect, useState } from "react"
-import ItemList from "./itemList"
+import ItemList from "./ItemList"
 import { useParams } from 'react-router-dom'
-const ItemListContainer = ({greeting}) => {
+const Itemlistcontainer = ({greeting}) => {
   const [data, setData]= useState([])
   const [loader, setLoader] =  useState(false)
   const {categoryId}= useParams()
@@ -37,4 +37,4 @@ const ItemListContainer = ({greeting}) => {
     )
 }
 
-export default ItemListContainer
+export default Itemlistcontainer

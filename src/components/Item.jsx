@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Itemcount from './Itemcount';
+import {Link} from 'react-router-dom'
 
 const Item = ({producto}) => {
   return (
@@ -13,9 +13,9 @@ const Item = ({producto}) => {
         <Card.Text>
           ${producto.price},00
         </Card.Text>
-        <a className='btn btn-primary'>Ver mas</a>
+        <a className='btn btn-primary' href='./Item.jsx${producto.id}'>Ver mas</a>
         <>
-        <Itemcount/>
+       
         </>
         <Button variant="primary">Añadir al carrito</Button>
       </Card.Body>

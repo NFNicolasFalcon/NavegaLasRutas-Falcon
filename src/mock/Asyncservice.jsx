@@ -5,7 +5,7 @@ const products = [
         price:5000,
         description:'igual que el 18 pero queda mas lindo cuando se ve en las redes',
         stock:15,
-        category:'celulares',
+        category:'Nuevos',
         img:'../IPhone.jpg'
     },
     {
@@ -32,7 +32,7 @@ const products = [
         price:8000,
         description:'Ideal para entretener a los niños ',
         stock:5,
-        category:'tablets',
+        category:'Nuevos',
         img:'../ipad.jpg'
     }
 ]
@@ -53,7 +53,7 @@ export const getOneProduct = (id)=>{
     return new Promise((resolve)=>{
         let productFound= products.find((prod)=> prod.id === id)
         setTimeout(()=>{
-            // resolve(products[0])
+           
             resolve(productFound)
         },1500)
     })
