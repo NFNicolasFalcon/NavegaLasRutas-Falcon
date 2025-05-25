@@ -1,10 +1,9 @@
-const Cartwidget =() =>{
-    return(
+const CartWidget = () => {
+    return (
         <div>
             <span>🛒</span>
-            <span>3</span>
+            <span>5</span>
         </div>
     )
 }
-
-export default Cartwidget
+export default CartWidget

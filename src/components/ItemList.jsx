@@ -1,9 +1,9 @@
 import React from 'react'
-import Item from './item'
+import Item from './Item'
 
 const ItemList = ({data}) => {
   return (
-    <div className='d-flex justify-content-around alingn-items-center flex-wrap'>
+    <div className='d-flex justify-content-around align-items-center flex-wrap'>
         {data.map((producto)=> <Item key={producto.id} producto={producto}/>)}
     </div>
   )
